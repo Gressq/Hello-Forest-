@@ -1,0 +1,55 @@
+*{
+    padding:0; 
+    margin:0;
+    box-sizing:border-box ; /*tamaño de la caja de nuestro navegador*/ 
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#fff;
+}
+
+.main-image{
+    background: url("forest.jpeg");
+    background-position: center bottom; /* esta propiedad nos indica que la imagen debe posicionarse en el centro inferior*/
+    background-size: cover;/*que cubra toda la pantalla*/
+    background-repeat: no-repeat;
+    /*sin que la imagen se repita */
+    width:100%;
+    min-height: 100vh; /*el elemento va a ocupar un ancho del 100% del navegador y una altura minima de 100% de la altura de la ventana del navegador, o sea que siempre va a estar cubiendo todo*/
+    display:flex; /*sabemos que se esta trabajando con flexbox*/
+    flex-direction: column;
+    align-items: center; /*alinear los items al centro */
+    justify-content: center; /*alinear todo el contenido al centro de todo, dando espacio tanto arriba como abajo*/
+    padding:0 1rem;
+    text-align: center;
+}
+
+
+.main-image h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    /*1 rem = 16 px, es una unidad de medida para la fuente */
+}
+
+.main-image p{
+    font-size:1.5rem; 
+    margin-bottom: 3rem;
+
+}
+
+.main-image button{
+    background: none;
+    /*desaparece el fondo del boton*/
+    color:#fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 1rem 2rem;/*relleno*/
+    text-transform: uppercase;
+    /*propiedad que nos cambia todo el texto de minusculas a mayusculas*/
+    font-weight: bold;/*resalta el texto*/
+    cursor:pointer; /*se pone la manita cuando pasamos cerca el cursor */
+    
+    
+}
